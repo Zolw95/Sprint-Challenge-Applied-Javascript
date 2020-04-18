@@ -10,7 +10,7 @@
 
 let data = axios.get('https://lambda-times-backend.herokuapp.com/topics')
 .then( function (response) {
-    console.log(response);
+    //console.log(response);
     /*
     // Save All Topics in variable
     let topicDiv = createTopic(response.data.topics);
@@ -25,13 +25,13 @@ let data = axios.get('https://lambda-times-backend.herokuapp.com/topics')
 
     // Save All Topics in variable
     let topicArr = response.data.topics;
-    console.log(topicArr);
+    //console.log(topicArr);
    
     topicArr.forEach(topic => {
+        // Call Function
         let newTopic = createTopic(topic)
         // Select Topics Element
         let topicsDiv = document.getElementsByClassName('topics')[0];
-       
         // Append Topics Element
         topicsDiv.appendChild(newTopic);
     })
