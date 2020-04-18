@@ -51,7 +51,8 @@ const createCarousel = () => {
   var activeImg = 0;
 
   right.addEventListener('click', (event) => {
-    imgArray[activeImg].classList.remove('active');
+    let actImg = imgArray[activeImg];
+    actImg.classList.remove('active');
     activeImg += 1;
     if (activeImg >= imgArray.length) {
       activeImg = 0;
