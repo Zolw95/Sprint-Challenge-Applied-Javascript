@@ -35,7 +35,14 @@
     transform: translate(0, -50%);
   }
   img {
-    .width-100();
-    display: none;
+    //.width-100();
+    opacity: 0;
+    width: 0;
+    transition: all .75s ease;
   }
+  img.active {
+    //display: block;
+    opacity: 1;
+    .width-100();
+  } 
 }
