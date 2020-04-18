@@ -22,13 +22,13 @@
 
 axios.get('https://lambda-times-backend.herokuapp.com/articles')
 .then(function (response) {
-    console.log(response)
+    //console.log(response)
     let articles = response.data.articles;
-    console.log(articles);
+    //console.log(articles);
     let cardCont = document.getElementsByClassName('cards-container')[0];    
 
     for (var key in articles) {
-        console.log(articles[key]);
+        //console.log(articles[key]);
         let articleList = articles[key];
         articleList.forEach(article => {
             let card = createCard(article);
